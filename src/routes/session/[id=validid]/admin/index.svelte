@@ -91,4 +91,5 @@
 <!--
     you can put this transition on the div to make it fade in/out, i didn't want to because it doesn't look good
     in:fly={{ x: 5, duration: 200, delay: 200 }} out:fly={{ x: -5, duration: 200 }}
+    edit: i did lol
 -->
