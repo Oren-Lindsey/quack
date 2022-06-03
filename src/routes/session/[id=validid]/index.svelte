@@ -31,7 +31,7 @@
         return data
     }
 </script>
-<h1 class="p-2 text-xl">Send questions to session "{name}"</h1>
+<h1 class="pt-2 text-xl">Send questions to session "{name}"</h1>
 <br>
 {#if msg.length > 0}
 <p class="mb-4">{msg}</p>

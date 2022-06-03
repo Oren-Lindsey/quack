@@ -33,7 +33,7 @@
 {#key questions}
     <ul>
     {#each questions.slice(0, Math.pow(10, 1000)) as question}
-        <li><div class="transition ease-in-out delay-50 bg-white shadow-md max-w-xs rounded w-96 [min-width: 24rem] max-w-sm px-8 pt-6 pb-8 mb-4 hover:shadow-xl dark:bg-slate-900 select-all" in:fly={{ x: 5, duration: 200, delay: 200 }} out:fly={{ x: -5, duration: 200 }}>{question.content}</div></li>
+        <li><div class="transition ease-in-out delay-50 bg-white shadow-md max-w-xs rounded w-96 [min-width: 24rem] max-w-sm px-8 pt-8 pb-8 mb-4 hover:shadow-xl dark:bg-slate-900 select-all" in:fly={{ x: 5, duration: 200, delay: 200 }} out:fly={{ x: -5, duration: 200 }}>{question.content}</div></li>
     {/each}
     </ul>
 {/key}
