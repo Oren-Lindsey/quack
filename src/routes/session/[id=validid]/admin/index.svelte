@@ -67,7 +67,7 @@
 {#if questions.length > 0}
 <p class="pb-4">{questions.length} {#if questions.length > 1}questions{:else}question{/if}</p>
 {:else}
-<p class="pt-4">No questions yet!</p>
+<p class="pb-4">No questions yet!</p>
 {/if}
 <button class="transition ease-in-out delay-50 p-2 mb-4 rounded-md inline-block bg-yellow-500 shadow-lg hover:shadow-2xl hover:bg-yellow-400 dark:bg-slate-1000 dark:hover:bg-slate-900" on:click={refresh}>refresh</button> <i class="text-gray-500">{msg}</i>
 {#key questions}
