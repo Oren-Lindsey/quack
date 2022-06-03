@@ -15,7 +15,7 @@
     description: `Homepage - Quack`,
   }}
 />
-<h1 class="text-black text-2xl">Quack</h1>
+<h1 class="text-black text-2xl dark:text-white">Quack</h1>
 <p class="text-gray-500">
     Quack is a simple and fast way to share and answer questions. Get started by creating a new session.
 </p>
