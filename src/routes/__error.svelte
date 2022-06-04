@@ -15,4 +15,4 @@
   </script>
   
   <h1 class="text-xl p-2">{title} error</h1>
-  <b class="underline decoration-yellow-400 decoration-wavy decoration-2">{#if title == 404} {message} {:else} something went wrong {/if}</b>
+  <b class="underline decoration-yellow-400 decoration-wavy decoration-2 hover:decoration-dotted">{#if title == 404} {message} {:else} something went wrong {/if}</b>
