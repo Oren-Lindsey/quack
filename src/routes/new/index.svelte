@@ -45,7 +45,7 @@
 </script>
 <h1 class="text-xl p-2">New session:</h1>
 <br>
-<form on:submit|preventDefault={createSession} class="transition ease-in-out delay-50 bg-white shadow-md rounded [background-color: green] [min-width: 36rem] px-8 pt-6 pb-8 mb-4 hover:shadow-xl dark:bg-slate-900">
+<form on:submit|preventDefault={createSession} class="transition ease-in-out delay-50 bg-gray-50 shadow-md rounded [background-color: green] [min-width: 36rem] px-8 pt-6 pb-8 mb-4 hover:shadow-xl dark:bg-slate-900">
     {#if show && !success}
     <div class="max-w-2 break-words">
         <i class="text-black dark:text-white">{msg}</i>
@@ -54,7 +54,7 @@
     {/if}
     <label for="name" class="text-gray-500">Name:</label>
     <br>
-    <input id="name" name="name" type="text" placeholder="name" class="transition ease-in-out delay-50 shadow appearance-none border rounded w-full py-2 px-3 my-4 text-gray-500 leading-tight focus:outline-none focus:shadow-outline hover:shadow-xl dark:bg-gray-900 dark:text-white" bind:value={name}>
+    <input id="name" name="name" type="text" placeholder="name" class="bg-gray-100 transition ease-in-out delay-50 shadow appearance-none border rounded w-full py-2 px-3 my-4 text-gray-500 leading-tight focus:outline-none focus:shadow-outline hover:shadow-xl dark:bg-gray-900 dark:text-white" bind:value={name}>
     <br>
     <button class="transition ease-in-out delay-50 p-2 rounded-md inline-block bg-yellow-500 shadow-lg hover:shadow-2xl hover:bg-yellow-400 dark:hover:bg-slate-800" type="submit">create</button>
 </form>

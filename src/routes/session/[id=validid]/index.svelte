@@ -36,9 +36,9 @@
 {#if msg.length > 0}
 <p class="mb-4">{msg}</p>
 {/if}
-<form on:submit|preventDefault={sendQuestion} class="transition ease-in-out delay-50 bg-white shadow-md rounded px-8 pt-6 pb-8 sm:[width: 36rem] sm:max-w-xl xs:max-w-md min-w-full xs:[width: 28rem] mb-4 hover:shadow-xl dark:bg-gray-900 dark:text-white">
+<form on:submit|preventDefault={sendQuestion} class="transition ease-in-out delay-50 bg-gray-50 shadow-md rounded px-8 pt-6 pb-8 sm:[width: 36rem] sm:max-w-xl xs:max-w-md min-w-full xs:[width: 28rem] mb-4 hover:shadow-xl dark:bg-gray-900 dark:text-white">
     <label for="content" class="text-gray-500">Content:</label>
-    <input class="transition ease-in-out delay-50 shadow appearance-none border rounded w-full py-2 px-3 my-4 text-gray-500 leading-tight focus:outline-none focus:shadow-outline hover:shadow-xl dark:bg-gray-900 dark:text-white" type="text" name="content" id="content" placeholder="Question content..." />
+    <input class="transition ease-in-out delay-50 shadow appearance-none border rounded w-full py-2 px-3 my-4 text-gray-500 leading-tight focus:outline-none focus:shadow-outline hover:shadow-xl dark:bg-gray-900 dark:text-white bg-gray-100" type="text" name="content" id="content" placeholder="Question content..." />
     <button type="submit" class="transition ease-in-out delay-50 p-2 rounded-md inline-block bg-yellow-500 shadow-lg hover:shadow-2xl hover:bg-yellow-400 dark:hover:bg-slate-800">Send</button>
 </form>
 <MetaTags

@@ -74,10 +74,10 @@
     {#each questions.slice(0, Math.pow(10, 1000)) as question}
         {@const id = question._id}
         <div in:fly={{ x: 5, duration: 200, delay: 200 }} out:fly={{ x: -5, duration: 200 }}>
-            <form id={id} name={id} on:submit|preventDefault={update} class="transition ease-in-out delay-50 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 hover:shadow-xl dark:bg-slate-900">
+            <form id={id} name={id} on:submit|preventDefault={update} class="transition ease-in-out delay-50 bg-gray-50 shadow-md rounded px-8 pt-6 pb-8 mb-4 hover:shadow-xl dark:bg-slate-900">
                 <p class="text-black dark:text-white" id={`msg-${id}`}></p>
                 <i class="text-gray-500">From IP address: <b>{question.ipAddress}</b></i>
-                <textarea id="content" name="content" placeholder="content..." value={question.content} class="transition ease-in-out delay-50 shadow appearance-none border rounded w-full py-2 px-3 my-4 text-gray-500 leading-tight focus:outline-none focus:shadow-outline hover:shadow-xl dark:bg-gray-900 dark:text-white" />
+                <textarea id="content" name="content" placeholder="content..." value={question.content} class="transition ease-in-out delay-50 shadow appearance-none border rounded w-full py-2 px-3 my-4 text-gray-500 leading-tight focus:outline-none focus:shadow-outline hover:shadow-xl dark:bg-gray-900 dark:text-white bg-gray-100" />
                 <input hidden id="id" name="id" value={id} />
                 <label for={`${id}-hidden`} class="dark:text-gray-500">hidden:</label> 
                 <input type="checkbox" class="accent-cyan-500" name="hidden" id={`${id}-hidden`} checked={question.hidden} />
