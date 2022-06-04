@@ -24,7 +24,12 @@
 </script>
 <h1 class="text-xl p-2">All sessions</h1>
 <button class="transition ease-in-out delay-50 p-2 my-2 rounded-md inline-block bg-yellow-500 shadow-lg hover:shadow-2xl hover:bg-yellow-400 dark:hover:bg-slate-900" on:click={refresh}>refresh</button>
-<p>{msg}</p>
+<i class="text-gray-500">{msg}</i>
+{#if sessions.length !== 1}
+<p>{sessions.length} sessions</p>
+{:else}
+<p>1 session</p>
+{/if}
 {#key sessions}
     <ul>
     {#each sessions.slice(0, Math.pow(10, 1000)) as session}
