@@ -24,7 +24,7 @@
 	"type": "module",
 	"dependencies": {
 		"dotenv": "^16.0.1",
-		"mongoose": "^6.3.5",
+		"mongoose": "^6.4.6",
 		"svelte-meta-tags": "^2.6.1",
 		"validate-objectid": "^0.2.0"
 	}
